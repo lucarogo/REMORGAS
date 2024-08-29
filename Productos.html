@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remorgas</title>
+    <link rel="stylesheet" href="/Insertables/seccion-header.css">
+    <link rel="stylesheet" href="/Insertables/banner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Insertables/empresa.css">
+    <link rel="stylesheet" href="/Insertables/aparte.css">
+    <link rel="stylesheet" href="/Insertables/seccion-cruzado.css">
+    <link rel="stylesheet" href="/Insertables/slider.css">
+    <link rel="stylesheet" href="/Insertables/ventas.css">
+    <link rel="stylesheet" href="/Insertables/servicios.css">
+    <link rel="stylesheet" href="/Insertables/infinito.css">
+    <link rel="stylesheet" href="/Insertables/seccion-footer.css">
+    <link rel="stylesheet" href="/Insertables/buttonStyles.css">
+    <link rel="stylesheet" href="/Insertables/minibanner.css">
+    <link rel="stylesheet" href="/Insertables/titulo.css">
+    <link rel="stylesheet" href="/Insertables/seccion-producto.css">
+    <link rel="stylesheet" href="/Insertables/seccion-formularioventa.css">
+</head>
+<body>
+    
+<!-- inicio de una nueva seccion-header -->
+<!-- Contenido de la página -->
+<div id="seccion-header"></div>
+<script>
+    // Cargar la sección header
+    fetch('/Insertables/seccion-header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('seccion-header').innerHTML = data;
+        });
+</script>
+<!-- fin de una nueva seccion header -->
+
+
+<!-- Sección Minibanner -->
+<section class="seccion-minibanner">
+  <div class="minibanner-contenedor">
+      <img src="/img/banner/tecnicos iamgen 2  (1536 x 190).jpg" alt="Minibanner" class="minibanner-imagen">
+      <h1 class="minibanner-titulo">Productos</h1>
+  </div>
+</section>
+<!-- FIN Sección Minibanner -->
+
+
+
+<!-- inicio de una nueva seccion-productos -->
+<!-- Contenido de la página -->
+<div id="seccion-productos"></div>
+<script>
+    // Cargar la sección header
+    fetch('/Insertables/seccion-productos.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('seccion-productos').innerHTML = data;
+        });
+</script>
+<!-- fin de una nueva seccion productos -->
+
+
+<!-- Contenido de la página -->
+<div id="seccion-formularioventa"></div>
+<script>
+    // Cargar la sección seccion-formularioventa
+    fetch('/Insertables/seccion-formularioventa.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('seccion-formularioventa').innerHTML = data;
+        });
+</script>
+<!-- fin de una nueva seccion seccion-formularioventa -->
+
+
+    <!-- inicio de una nueva seccion-footer -->
+     <!-- Contenido de la página -->
+     <div id="seccion-footer"></div>
+     <script>
+         // Cargar la sección footer
+         fetch('/Insertables/seccion-footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('seccion-footer').innerHTML = data;
+             });
+     </script>
+     <!-- fin de una nueva seccion footer -->
+
+<script src="/Insertables/slider.js"></script>
+<script src="/Insertables/empresa.js"></script>
+<script src="/Insertables/banner.js"></script>
+<script src="/Insertables/loadButton.js"></script>
+</body>
+</html>

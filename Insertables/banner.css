@@ -1,0 +1,112 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  font-family: 'Arial', Helvetica, Arial, Lucida, sans-serif;
+}
+
+#seccion-banner {
+  background-color: #ffffff;
+  margin: 0; /* Elimina el margen alrededor de la sección */
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.banner {
+  position: relative;
+  width: 100vw; /* Asegura que ocupe todo el ancho de la ventana del navegador */
+  height: 614px;
+  overflow: hidden;
+  margin: 0; /* Elimina cualquier margen */
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  position: absolute; /* Superpone las imágenes */
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.banner img.active {
+  opacity: 1;
+  z-index: 1; /* Asegura que la imagen activa esté al frente */
+}
+
+.banner img.inactive {
+  z-index: 0; /* La imagen que se desvanece se coloca detrás de la activa */
+}
+
+.flecha {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, filter 0.3s;
+  z-index: 10; /* Asegúrate de que la flecha esté por encima del contenido del banner */
+}
+
+.flecha:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.izquierda {
+  left: 10px;
+  transform: translateY(-50%); /* Centrar verticalmente */
+}
+
+.derecha {
+  right: 10px;
+  transform: translateY(-50%); /* Centrar verticalmente */
+}
+
+.miniaturas-container {
+  width: 100%;
+  background-color: #ffffff; /* Fondo blanco para las miniaturas */
+  padding: 10px 0; /* Espacio arriba y abajo para separar de otros elementos */
+}
+
+.miniaturas {
+  margin: 1px auto;
+  padding: 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.miniatura {
+  width: 250px;
+  height: 80px;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.miniatura:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 300px;
+  }
+
+  .miniatura {
+    width: 150px;
+    height: 50px;
+  }
+}

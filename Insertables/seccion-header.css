@@ -1,0 +1,153 @@
+/* Encapsulación del contenedor principal */
+#gas-app {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    font-family: 'Arial', Helvetica, Arial, Lucida, sans-serif;
+}
+
+/* Estilos del Header */
+.gas-header {
+    background-color: #ffffff;
+    padding: 24px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Correcto para desplazarse con la página */
+    
+}
+
+.gas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos del Logo */
+.gas-logo {
+    position: relative; /* Asegura que los ajustes de posición se apliquen correctamente */
+}
+
+.gas-logo img {
+    position: absolute;
+    transform: scale(1.8);
+    left: 10px;
+    top: -26px;
+    transition: transform 0.3s ease;
+}
+
+.gas-logo a {
+    font-size: 2em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.gas-logo a:hover {
+    color: #f0c040;
+}
+
+/* Estilos del Menú */
+.gas-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gas-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.gas-item {
+    position: relative;
+    margin-left: 30px;
+}
+
+.gas-item a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 25px 15px;
+    transition: color 0.3s ease;
+}
+
+.gas-item a:hover {
+    color: #1fab54;
+}
+
+/* Estilos del Submenú */
+.gas-submenu {
+    display: none;
+    position: absolute;
+    top: 206%;
+    left: 0;
+    background-color: #ffffff;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    min-width: 250px;
+    z-index: 1000;
+    text-align: left;
+}
+
+.gas-submenu li {
+    margin: 0;
+    padding: 0;
+}
+
+.gas-submenu li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 12px 20px;
+    display: block;
+    transition: opacity 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.gas-submenu li a:hover {
+    background-color: #1fab54;
+    color: #ffffff;
+}
+
+/* Despliegue del Submenú */
+.gas-item:hover .gas-submenu {
+    display: block;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .gas-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gas-nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .gas-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gas-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .gas-submenu {
+        position: static;
+        display: none;
+    }
+
+    .gas-item:hover .gas-submenu {
+        display: block;
+    }
+}

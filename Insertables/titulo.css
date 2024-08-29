@@ -1,0 +1,64 @@
+/* Estilos para la sección-titulo */
+.seccion-titulo {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 80px;
+}
+
+.seccion-titulo .titulo-grande {
+    color: #1fab54;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: animacion-titulo 1.5s ease-in-out;
+}
+
+.seccion-titulo .texto-linea {
+    color: #000000;
+    font-size: 20px;
+    margin: 40px 0;
+    animation: animacion-texto 2s ease-in-out;
+}
+
+@keyframes animacion-titulo {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animacion-texto {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Diseño responsivo */
+@media screen and (max-width: 768px) {
+    .seccion-titulo .titulo-grande {
+        font-size: 36px;
+    }
+
+    .seccion-titulo .texto-linea {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .seccion-titulo .titulo-grande {
+        font-size: 28px;
+    }
+
+    .seccion-titulo .texto-linea {
+        font-size: 16px;
+    }
+}

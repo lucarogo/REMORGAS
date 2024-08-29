@@ -1,0 +1,72 @@
+  
+    <h2 class="formularioventa-titulo">Deseas Abastecer tu almacen? <strong>!Contactanos¡</strong></h2>
+   <section id="formularioventa" class="seccion-formularioventa">
+        <div id="formularioventa" class="formularioventa-contenedor">
+            <!-- <h2 class="formularioventa-titulo">Deseas Abastecer tu almacen? <strong>!Contactanos¡</strong></h2> -->
+            <form class="formularioventa-contacto" id="formularioventa-form">
+                <div class="formularioventa-campo">
+                    <label for="nombre-contacto" class="formularioventa-label">Nombre de contacto:</label>
+                    <input type="text" id="nombre-contacto" class="formularioventa-input" required>
+                </div>
+                <div class="formularioventa-campo">
+                    <label for="razon-social" class="formularioventa-label">Razón social:</label>
+                    <input type="text" id="razon-social" class="formularioventa-input" required>
+                </div>
+                <div class="formularioventa-campo">
+                    <label for="ruc" class="formularioventa-label">RUC:</label>
+                    <input type="text" id="ruc" class="formularioventa-input" required>
+                </div>
+                <div class="formularioventa-campo">
+                    <label for="distrito" class="formularioventa-label">Distrito:</label>
+                    <input type="text" id="distrito" class="formularioventa-input" required>
+                </div>
+                <div class="formularioventa-campo">
+                    <label for="productos" class="formularioventa-label">Productos:</label>
+                    <input type="text" id="productos" class="formularioventa-input" required>
+                </div>
+                <div class="formularioventa-campo">
+                    <label for="cantidad" class="formularioventa-label">Cantidad:</label>
+                    <input type="number" id="cantidad" class="formularioventa-input" required>
+                </div>
+                <div class="formularioventa-campo">
+                    <label for="mensaje" class="formularioventa-label">Mensaje:</label>
+                    <textarea id="mensaje" class="formularioventa-textarea" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="formularioventa-boton">Enviar</button>
+            </form>
+        </div>
+        <div class="formularioventa-mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15615.483417368072!2d-77.0469823!3d-11.9140749!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d7c37af1b2e5%3A0xb0e841c9d291caf1!2sREMORGAS%20CONVERSIONES%20GNV-GLP%20%7C%20TALLER%20DE%20CONVERSIONES%20EN%20COMAS!5e0!3m2!1ses-419!2spe!4v1724171364658!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('formularioventa-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario
+            // Validación de campos vacíos
+            const inputs = document.querySelectorAll('.formularioventa-input, .formularioventa-textarea');
+            let allFilled = true;
+            inputs.forEach(input => {
+                if (input.value === '') {
+                    allFilled = false;
+                    input.classList.add('formularioventa-error');
+                } else {
+                    input.classList.remove('formularioventa-error');
+                }
+            });
+            if (allFilled) {
+                alert('Formulario enviado exitosamente.');
+                this.reset(); // Resetea el formulario
+            } else {
+                alert('Por favor, complete todos los campos.');
+            }
+        });
+    </script>

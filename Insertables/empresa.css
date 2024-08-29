@@ -1,0 +1,89 @@
+#seccion-Empresa {
+    background: linear-gradient(to bottom, #6d6c6c, #000000);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Arial',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.empresa-logo img {
+    max-width: 100%;
+    height: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.empresa-texto {
+    margin: 20px 0;
+    font-size: 1.2em;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 0.5s forwards;
+}
+
+.empresa-estadisticas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.columna {
+    flex: 1;
+    max-width: 25%;
+    margin: 10px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animaciones para números y textos */
+.numero {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    animation: numberAnimation 2s ease-in-out;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+.texto {
+    font-size: 1.2em;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Efectos al pasar el cursor */
+.numero:hover {
+    color: #ffd700; /* Cambia el color del número al pasar el cursor */
+    transform: translateY(-5px);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Añade sombra al texto */
+}
+
+.texto:hover {
+    color: #e0e0e0; /* Cambia el color del texto al pasar el cursor */
+    transform: translateY(-2px);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Añade sombra al texto */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes numberAnimation {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .columna {
+        max-width: 100%;
+    }
+}

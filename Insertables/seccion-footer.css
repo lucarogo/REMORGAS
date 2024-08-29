@@ -1,0 +1,152 @@
+.footer-secundario {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #6d6c6c, #000000);
+    color: #FFF;
+    padding: 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-columna {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-columna:last-child {
+    margin-right: 0;
+}
+
+.footer-logo {
+    max-width: 250px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 15px;
+    margin-left: 80px;
+}
+
+.footer-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+    color: #fabc05;
+    transform: scale(1.1);
+}
+
+.footer-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fabc05;
+    margin-bottom: 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.footer-texto {
+    font-size: 1rem;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+.footer-texto-innovaperu {
+    font-weight: bold;
+    color: #1fab54;
+}
+
+.footer-enlace {
+    color: #1fab54;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-enlace:hover {
+    color: #fabc05;
+}
+
+.footer-enlace-whatsapp {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-lista li {
+    margin-bottom: 10px; /* Ajusta el valor según tus necesidades */
+}
+
+.footer-item {
+    color: #1fab54;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-item:hover {
+    color: #fabc05;
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 768px) {
+    .footer-secundario {
+        padding: 20px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-columna {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-columna:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer-logo {
+        margin-bottom: 15px;
+    }
+
+    .footer-redes {
+        justify-content: center;
+    }
+
+    .footer-icon {
+        font-size: 2rem;
+    }
+
+    .footer-titulo {
+        font-size: 1.2rem;
+    }
+
+    .footer-texto, .footer-enlace, .footer-item {
+        font-size: 0.9rem;
+    }
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 0.875rem; /* Tamaño de fuente */
+    color: #FFF;
+    margin-top: 24px; /* Espacio superior */
+    font-family: 'DM Sans', sans-serif;
+}

@@ -1,0 +1,81 @@
+#seccion-slider {
+  background: linear-gradient(to bottom, #ffffff, #1fab54);
+  color: #1fab54;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Arial', Helvetica, Arial, Lucida, sans-serif;
+}
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+}
+
+.slider-title {
+  font-size: 2.1em;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-prev, .carousel-next {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.3s ease;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+  color: #585656;
+}
+
+.carousel-prev {
+  position: absolute;
+  left: 10px;
+}
+
+.carousel-next {
+  position: absolute;
+  right: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  margin-top: 15px;
+}
+
+.carousel-slide {
+  min-width: 288px;
+  height: 458px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: perspective(1000px) translateZ(-5px); /* Efecto de profundidad */
+}
+
+.carousel-slide img {
+  width: 98%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease; /* Transición suave para el efecto de profundidad */
+}
+
+.carousel-slide:hover img {
+  transform: scale(1.05); /* Leve aumento de tamaño al pasar el mouse */
+}
+
+.carousel-caption {
+  font-size: 1.9em;
+  margin-top: 40px;
+  color: #ffffff;
+}

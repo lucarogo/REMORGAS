@@ -1,0 +1,49 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 1420px; /* Alineación a la izquierda */
+    background-color: #25D366; /* Color de fondo verde de WhatsApp */
+    color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 9999 !important; /* Asegura que el botón esté por encima de todo */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.1);
+}
+
+.whatsapp-button i {
+    font-size: 24px;
+    color: white; /* Color del ícono */
+    
+}
+.whatsapp-tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fabc05;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 100%; /* Coloca el tooltip arriba del botón */
+    left: 60%;
+    transform: translateX(-50%); /* Centra el tooltip horizontalmente */
+    margin-bottom: 10px; /* Espacio entre el botón y el tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10000; /* Asegura que el tooltip esté por encima del botón */
+}
+.whatsapp-button:hover .whatsapp-tooltip {
+    visibility: visible;
+    opacity: 1;
+}

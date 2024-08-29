@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remorgas</title>
+    <link rel="stylesheet" href="/Insertables/seccion-header.css">
+    <link rel="stylesheet" href="/Insertables/banner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Insertables/empresa.css">
+    <link rel="stylesheet" href="/Insertables/aparte.css">
+    <link rel="stylesheet" href="/Insertables/seccion-cruzado.css">
+    <link rel="stylesheet" href="/Insertables/slider.css">
+    <link rel="stylesheet" href="/Insertables/ventas.css">
+    <link rel="stylesheet" href="/Insertables/servicios.css">
+    <link rel="stylesheet" href="/Insertables/infinito.css">
+    <link rel="stylesheet" href="/Insertables/seccion-footer.css">
+    <link rel="stylesheet" href="/Insertables/buttonStyles.css">
+    <link rel="stylesheet" href="/Insertables/minibanner.css">
+    <link rel="stylesheet" href="/Insertables/titulo.css">
+</head>
+<body>
+    
+<!-- inicio de una nueva seccion-header -->
+<!-- Contenido de la página -->
+<div id="seccion-header"></div>
+<script>
+    // Cargar la sección header
+    fetch('/Insertables/seccion-header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('seccion-header').innerHTML = data;
+        });
+</script>
+<!-- fin de una nueva seccion header -->
+
+
+<!-- Sección Minibanner -->
+<section class="seccion-minibanner">
+  <div class="minibanner-contenedor">
+      <img src="/img/banner/taller de fondo (1536 x 190).jpg" alt="Minibanner" class="minibanner-imagen">
+      <h1 class="minibanner-titulo">La Empresa</h1>
+  </div>
+</section>
+<!-- FIN Sección Minibanner -->
+
+<!-- Sección Título -->
+<section class="seccion-titulo">
+  <h1 class="titulo-grande">REMORGAS 2 AÑOS DE EXPERIENCIA</h1>
+  <p class="texto-linea">Somos una empresa peruana de referencia en la conversión de vehículos 
+    a GNV y GLP, abarcando todo tipo de automóviles a gasolina. Contamos con una sólida y bien 
+    establecida presencia en la zona norte de Lima, Perú. Durante más de 2 años, hemos ofrecido 
+    soluciones efectivas y concretas a los retos que se nos han presentado, asegurando calidad 
+    y un excelente servicio a nuestros clientes.</p>
+</section>
+<!-- Fin Sección Título -->
+
+<section id="seccion-aparte">
+    <div class="columna-izquierda">
+      <h1 class="titulo-aparte">MISIÓN</h1>
+      <h2 class="subtitulo-aparte"></h2>
+      <p class="texto-aparte">Ofrecer <strong>SERVICIOS</strong> de conversiones a <strong>GNV y GLP</strong>, <strong>A COSTOS ACCESIBLES PARA LOS USUARIOS</strong>, superando las expectativas de nuestros clientes.</p>
+      <!-- <a href="index.html" class="boton-aparte">Ir al índice</a> -->
+    </div>
+    <div class="columna-derecha">
+      <img src="/img/mision.jpg" alt="Descripción de la imagen" class="imagen-aparte">
+    </div>
+</section>
+
+
+<section class="seccion-cruzado-v2">
+  <div class="cruzado-v2-contenedor">
+    <div class="cruzado-v2-columna cruzado-v2-imagen">
+      <img src="/img/vision.jpg" alt="Descripción de la imagen">
+    </div>
+    <div class="cruzado-v2-columna cruzado-v2-texto">
+      <h2 class="cruzado-v2-titulo">VISIÓN</h2>
+      <p class="cruzado-v2-breve">Llegar a ser el <strong>MEJOR</strong> taller de conversiones a GNV y GLP a nivel de todo Lima, al mismo tiempo <strong> LOGRAR CONVERTIR LA MAYOR CANTIDAD DE VEHICULOS A GAS VEHICULAR PARA UN MEJOR CUIDADO DE NUESTRO PLANETA.</strong></p>
+      <!-- <a href="index.html" class="cruzado-v2-boton">Averígualo aquí</a> -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<main>
+  <section class="seccion-slider-unique">
+    <h1 style="text-align: center;">SOMOS ESPECIALISTAS CONVIRTIENDO TODAS LAS MARCAS DE VEHÍCULOS A GNV Y GLP</h1>
+
+    
+      <div class="slider-unique" style="
+          --width: 100px;
+          --height: 50px;
+          --quantity: 10;
+      ">
+      </div>
+
+      <div class="slider-unique" reverse="true" style="
+      --width: 200px;
+      --height: 200px;
+      --quantity: 16;
+  ">
+          <div class="list-unique">
+              <div class="item-unique" style="--position: 1"><img src="/img/MARCAS/honda-e1668035654134.png" alt=""></div>
+              <div class="item-unique" style="--position: 2"><img src="/img/MARCAS/LOGO-CHANGAN-1-e1668045749866.png" alt=""></div>
+              <div class="item-unique" style="--position: 3"><img src="/img/MARCAS/logo-chery-2-e1668042221949.png" alt=""></div>
+              <div class="item-unique" style="--position: 4"><img src="/img/MARCAS/logo-chevrolet-e1668111871406.png" alt=""></div>
+              <div class="item-unique" style="--position: 5"><img src="/img/MARCAS/logo-citroen-e1668038091340.png" alt=""></div>
+              <div class="item-unique" style="--position: 6"><img src="/img/MARCAS/LOGO-FAW-e1668121106865.png" alt=""></div>
+              <div class="item-unique" style="--position: 7"><img src="/img/MARCAS/logo-great-wall-e1668119792579.png" alt=""></div>
+              <div class="item-unique" style="--position: 8"><img src="/img/MARCAS/LOGO-JAC-2-e1668043040224.png" alt=""></div>
+              <div class="item-unique" style="--position: 9"><img src="/img/MARCAS/logo-mazda-e1668040889456.png" alt=""></div>
+              <div class="item-unique" style="--position: 10"><img src="/img/MARCAS/logo-mitsubishi-e1668037210917.png" alt=""></div>
+              <div class="item-unique" style="--position: 11"><img src="/img/MARCAS/logo-nissan-e1668034441956.jpg" alt=""></div>
+              <div class="item-unique" style="--position: 12"><img src="/img/MARCAS/logo-peugeot-e1668037644710.png" alt=""></div>
+              <div class="item-unique" style="--position: 13"><img src="/img/MARCAS/Mesa-de-trabajo-1-copia-10-8.png" alt=""></div>
+              <div class="item-unique" style="--position: 14"><img src="/img/MARCAS/Mesa-de-trabajo-1-copia-5-8.png" alt=""></div>
+              <div class="item-unique" style="--position: 15"><img src="/img/MARCAS/Mesa-de-trabajo-1-copia-7-8.png" alt=""></div>
+              <div class="item-unique" style="--position: 16"><img src="/img/MARCAS/Mesa-de-trabajo-1-copia-9-8.png" alt=""></div>
+          </div>
+      </div>
+  </section>
+</main>
+
+
+
+
+
+    <!-- inicio de una nueva seccion-footer -->
+     <!-- Contenido de la página -->
+     <div id="seccion-footer"></div>
+     <script>
+         // Cargar la sección footer
+         fetch('/Insertables/seccion-footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('seccion-footer').innerHTML = data;
+             });
+     </script>
+     <!-- fin de una nueva seccion footer -->
+
+<script src="/Insertables/slider.js"></script>
+<script src="/Insertables/empresa.js"></script>
+<script src="/Insertables/banner.js"></script>
+<script src="/Insertables/loadButton.js"></script>
+</body>
+</html>

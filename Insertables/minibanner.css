@@ -1,0 +1,52 @@
+/* Sección Minibanner */
+.seccion-minibanner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.minibanner-contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 1536px;
+    height: 190px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.minibanner-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.minibanner-titulo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4.5em;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.minibanner-contenedor:hover .minibanner-imagen {
+    filter: brightness(50%);
+}
+
+.minibanner-contenedor:hover .minibanner-titulo {
+    color: #fabc05; /* Cambia a un color brillante */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Responsividad para móviles */
+@media screen and (max-width: 768px) {
+    .minibanner-titulo {
+        font-size: 1.5em;
+    }
+}

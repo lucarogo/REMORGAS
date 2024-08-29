@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remorgas</title>
+    <link rel="stylesheet" href="/Insertables/seccion-header.css">
+    <link rel="stylesheet" href="/Insertables/banner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Insertables/empresa.css">
+    <link rel="stylesheet" href="/Insertables/aparte.css">
+    <link rel="stylesheet" href="/Insertables/seccion-cruzado.css">
+    <link rel="stylesheet" href="/Insertables/slider.css">
+    <link rel="stylesheet" href="/Insertables/ventas.css">
+    <link rel="stylesheet" href="/Insertables/servicios.css">
+    <link rel="stylesheet" href="/Insertables/infinito.css">
+    <link rel="stylesheet" href="/Insertables/seccion-footer.css">
+    <link rel="stylesheet" href="/Insertables/buttonStyles.css">
+    <link rel="stylesheet" href="/Insertables/minibanner.css">
+    <link rel="stylesheet" href="/Insertables/contacto.css">
+    <link rel="stylesheet" href="/Insertables/formulario.css">
+</head>
+<body>
+    
+<!-- inicio de una nueva seccion-header -->
+  <!-- Contenido de la página -->
+  <div id="seccion-header"></div>
+  <script>
+      // Cargar la sección header
+      fetch('/Insertables/seccion-header.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('seccion-header').innerHTML = data;
+          });
+  </script>
+<!-- fin de una nueva seccion header -->
+
+
+
+
+<!-- Sección Minibanner -->
+<section class="seccion-minibanner">
+  <div class="minibanner-contenedor">
+      <img src="/img/banner/tecnicos iamgen 2  (1536 x 190).jpg" alt="Minibanner" class="minibanner-imagen">
+      <h1 class="minibanner-titulo">CONTACTANOS</h1>
+  </div>
+</section>
+<!-- FIN Sección Minibanner -->
+
+
+
+<!-- Seccion contacto -->
+
+<div class="seccion-contacto">
+  <div class="contacto-column">
+      <i class="fas fa-envelope contacto-icon"></i>
+      <div class="contacto-info">
+          <h3 class="contacto-titulo">Correo:</h3>
+          <p class="contacto-texto">ventas@remorgas.com</p>
+      </div>
+  </div>
+  <div class="contacto-column">
+      <i class="fas fa-map-marker-alt contacto-icon"></i>
+      <div class="contacto-info">
+          <h3 class="contacto-titulo">Dirección:</h3>
+          <p class="contacto-texto">Av. Universitaria 9436 – Urb. San Juan Bautista Comas</p>
+      </div>
+  </div>
+  <div class="contacto-column">
+      <i class="fas fa-clock contacto-icon"></i>
+      <div class="contacto-info">
+          <h3 class="contacto-titulo">Horario de atención:</h3>
+          <p class="contacto-texto">Lunes a Viernes: 8:00 am a 6:30 pm<br>Sábados: 8:00 am a 3:00 pm</p>
+      </div>
+  </div>
+  <div class="contacto-column">
+      <i class="fas fa-phone-alt contacto-icon"></i>
+      <div class="contacto-info">
+          <h3 class="contacto-titulo">Números de contacto:</h3>
+          <p class="contacto-texto">Cel: 929 370 747<br>Cel: 974 364 608</p>
+      </div>
+  </div>
+</div>
+<!-- Fin Seccion contacto -->
+
+<!-- Seccion Formulario -->
+
+<section class="seccion-formulario">
+  <div class="formulario-contenedor">
+      <h2 class="formulario-titulo">Estamos atentos a sus consultas y sugerencias</h2>
+      <form class="formulario-contacto">
+          <div class="formulario-campo">
+              <label for="nombre-apellido" class="formulario-label">Nombre y apellido:</label>
+              <input type="text" id="nombre-apellido" class="formulario-input" required>
+          </div>
+          <div class="formulario-campo">
+              <label for="dni" class="formulario-label">DNI:</label>
+              <input type="text" id="dni" class="formulario-input" required>
+          </div>
+          <div class="formulario-campo">
+              <label for="placa-vehicular" class="formulario-label">Placa vehicular:</label>
+              <input type="text" id="placa-vehicular" class="formulario-input" required>
+          </div>
+          <div class="formulario-campo">
+              <label for="telefono" class="formulario-label">Teléfono:</label>
+              <input type="tel" id="telefono" class="formulario-input" required>
+          </div>
+          <div class="formulario-campo">
+              <label for="email" class="formulario-label">Correo electrónico:</label>
+              <input type="email" id="email" class="formulario-input" required>
+          </div>
+          <div class="formulario-campo">
+              <label for="mensaje" class="formulario-label">Detalles de su solicitud:</label>
+              <textarea id="mensaje" class="formulario-textarea" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="formulario-boton">Enviar</button>
+      </form>
+  </div>
+  <div class="formulario-mapa">
+      <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15615.483417368072!2d-77.0469823!3d-11.9140749!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d7c37af1b2e5%3A0xb0e841c9d291caf1!2sREMORGAS%20CONVERSIONES%20GNV-GLP%20%7C%20TALLER%20DE%20CONVERSIONES%20EN%20COMAS!5e0!3m2!1ses-419!2spe!4v1724171364658!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+  </div>
+</section>
+<!-- Fin Seccion Formulario -->
+
+
+
+
+<!-- inicio de una nueva seccion-footer -->
+     <!-- Contenido de la página -->
+     <div id="seccion-footer"></div>
+     <script>
+         // Cargar la sección footer
+         fetch('/Insertables/seccion-footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('seccion-footer').innerHTML = data;
+             });
+     </script>
+     <!-- fin de una nueva seccion footer -->
+
+<script src="/Insertables/slider.js"></script>
+<script src="/Insertables/empresa.js"></script>
+<script src="/Insertables/banner.js"></script>
+<script src="/Insertables/loadButton.js"></script>
+</body>
+</html>
